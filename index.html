@@ -1,295 +1,340 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Zaiko Eugenii Portfolio">
     <meta name="author" content="Zaiko Rahunak Eugenii">
     <meta name="generator" content="Hugo 0.88.1">
+    <link rel="stylesheet" href="style.css">
     <title>Zaiko Eugenii Portfolio</title>
-
-    <!-- Bootstrap core CSS -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <style>
-
-
-        .projectItems {
-            padding: 0;
-            margin: 0;
-            opacity: 1;
-
-        }
-
-        .projectItems::before {
-            content: "< ";
-            opacity: 0;
-            transition: opacity 500ms;
-        }
-
-        .projectItems::after {
-            content: " />";
-            opacity: 0;
-            transition: opacity 500ms;
-        }
-
-        .projectItems:hover::after, .projectItems:hover::before {
-            opacity: 1;
-        }
-
-        .footerItems:hover {
-            animation-duration: 500ms;
-            animation-name: moveLink;
-            animation-iteration-count: 1;
-        }
-
-        @keyframes moveLink {
-            20% {
-                transform: translateY(-4px);
-            }
-            40% {
-                transform: translateY(4px);
-            }
-            60% {
-                transform: translateY(-2px);
-            }
-            80% {
-                transform: translateY(2px);
-            }
-            to {
-                transform: translateY(0px);
-            }
-        }
 
     </style>
 
 
 </head>
+
 <body class="overflow-visible">
 
-<header>
+    <header>
 
-    <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">
-                        Name: <b>Eugenii</b><br/>
-                        Surname:<b>Zaiko</b><br/>
-                        Phone:+375257810998
-                    </p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Skills</h4>
-                    <ul class="list-unstyled">
-                        <li><a target="_blank" href="https://github.com/rahunak?tab=repositories" class="text-white" id ="profile-link">GitHub</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/rahunak/"
-                               class="text-white">Linkedin</a></li>
-                        <li><a href="mailto:rahunak@yandex.by" class="text-white">Send me a mail</a></li>
-                    </ul>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">
+                            Name: <b>Eugenii</b><br />
+                            Surname:<b>Zaiko</b><br />
+                            Phone:+375257810998
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Skills</h4>
+                        <ul class="list-unstyled">
+                            <li><a target="_blank" href="https://github.com/rahunak?tab=repositories" class="text-white"
+                                    id="profile-link">GitHub</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/rahunak/"
+                                    class="text-white">Linkedin</a></li>
+                            <li><a href="mailto:rahunak@yandex.by" class="text-white">Send me a mail</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark fixed-top shadow-sm" id ="navbar">
-        <div class="container ">
-            <a class="nav-item text-white text-decoration-none" href="#top">About me</a>
-            <a class="nav-item text-white text-decoration-none" href="#mainProjects">Projects</a>
-            <a class="nav-item text-white text-decoration-none" href="#footer">Contacts</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+        <nav class="navbar navbar-dark bg-dark fixed-top shadow-sm" id="navbar">
+            <div class="container ">
+                <a class="nav-item text-white text-decoration-none" href="#top">About me</a>
+                <a class="nav-item text-white text-decoration-none" href="#mainProjects">Projects</a>
+                <a class="nav-item text-white text-decoration-none" href="#footer">Contacts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        </div>
-    </nav>
-</header>
-
-<main>
-
-
-    <section id ="welcome-section". class="py-0 vh-100 text-center col ">
-
-        <div class="mx-auto h-100 d-flex flex-column justify-content-center align-items-center ">
-            <h1 class="fw-light display-1 fw-bold">Zaiko Eugeni</h1>
-            <p class="lead text-muted display-6">a web developer</p>
-        </div>
-
-
-    </section>
-
-
-    <section class="col album py-5 bg-light min-vh-100  g-3 d-flex justify-content-center align-items-center"
-             id="mainProjects">
-        <div class="container ">
-            <div class="row mx-auto ">
-                <h2 class="text-center py-5 h1">These are some of my projects</h2>
             </div>
-            <div class="row " id = "projects">
+        </nav>
+    </header>
+
+    <main>
 
 
-                <div class="col">
-                    <div class="card shadow-sm project-tile" >
-                        <a href="https://rahunak.github.io/LandingPage/" target="_blank"
-                           class="text-dark text-decoration-none align-middle  ">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="280"
-                                 src="images/LandingPage.png" alt="Landing Page" aria-label="Landing Page">
-                            <div class="card-body">
-                                <p class="card-text  text-center h3 projectItems">
+        <section id="welcome-section" . class="py-0 vh-100 text-center col ">
+
+            <div class="mx-auto h-100 d-flex flex-column justify-content-center align-items-center ">
+                <h1 class="fw-light display-1 fw-bold">Zaiko Eugeni</h1>
+                <p class="lead text-muted display-6">a web developer</p>
+            </div>
 
 
-                                    Landing Page
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">HTML + JavaScript</small>
+        </section>
+
+
+        <section class="col album py-5 bg-light min-vh-100  g-3 d-flex justify-content-center align-items-center"
+            id="mainProjects">
+            <div class="container ">
+                <div class="row mx-auto ">
+                    <h2 class="text-center py-5 h1">These are some of my projects</h2>
+                </div>
+                <div class="row my-5">
+                  
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/nft-preview-card-component-main/" target="_blank"
+                                class="text-dark text-decoration-none align-middle  ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/nft-mobile-design.jpg" alt="advice " aria-label="NFT application">
+                                <div class="card-body">
+                                    <p class="card-text  text-center h3 projectItems">
+                                        NFT Coin
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">HTML + JavaScript</small>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="col">
-                    <div class="card shadow-sm project-tile"  >
-                        <a href="https://rahunak.github.io/registrationPage/" target="_blank"
-                                                   class="text-dark text-decoration-none align-middle ">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="280"
-                             src="images/HtmlFormRegistration.png" alt="form registration"
-                             aria-label="form registration">
-                        <div class="card-body">
-                            <p class="card-text text-center h3 projectItems">
-                                Form
-                                registration
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-
-                                <small class="text-muted">HTML</small>
-                            </div>
-
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-
-                <div class="col">
-                    <div class="card shadow-sm project-tile">
-                        <a href="https://rahunak.github.io/calculator/" target="_blank"
-                                                   class="text-dark text-decoration-none align-middle ">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="280" src="images/calc.png"
-                             alt="calculator" aria-label="calculator">
-                        <div class="card-body">
-                            <p class="card-text text-center h3 projectItems">
-                                Calculator
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-
-                                <small class="text-muted">JSX</small>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="row">
-                <div class="col d-flex flex-row justify-content-center align-items-center py-5">
-                    <div class="btn btn-outline-secondary px-3">
-                        <a href="https://github.com/rahunak" class="text-decoration-none text-dark" target="_blank">
-                            <p class="display-6 my-auto text-center">Show all
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                     class="bi bi-box-arrow-in-right my-auto" viewBox="2 2 15 15">
-                                    <path fill-rule="evenodd"
-                                          d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
-                                    <path fill-rule="evenodd"
-                                          d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                                </svg>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="col py-0 vh-100 text-center container ">
-
-        <div class="mx-auto h-100 d-flex flex-column justify-content-center align-items-center ">
-
-            <div class="mb-5">
-                <h1 class="fw-light display-1 fw-bold">Let's work together...</h1>
-                <p class="lead text-muted display-6">How do you take your coffee?</p>
-            </div>
-            <div class="d-flex flex-row justify-content-center vw-100 ">
-
-                <div class="px-5 footerItems">
-                    <a href="#">
-
-                        <p class="h2 ">
-                            <a href="https://github.com/rahunak" target="_blank" class="text-dark text-decoration-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                     class="bi bi-github" viewBox="0 0 16 20">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                </svg>
-                                Git
                             </a>
-                        </p>
-                    </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/order-summary-component-main/" target="_blank"
+                                class="text-dark text-decoration-none align-middle  ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/summary-mobile-design.jpg" alt="advice "
+                                    aria-label="Advice application">
+                                <div class="card-body">
+                                    <p class="card-text  text-center h3 projectItems">
+                                        Order Summary
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">HTML + CSS + JavaScript</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/qr-code-component/" target="_blank"
+                                class="text-dark text-decoration-none align-middle  ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/my-qe-code.png" alt="advice " aria-label="Advice application">
+                                <div class="card-body">
+                                    <p class="card-text  text-center h3 projectItems">
+                                        QR code
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">HTML + CSS</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/LandingPage/" target="_blank"
+                                class="text-dark text-decoration-none align-middle  ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/advice-mobile-design.jpg" alt="advice " aria-label="Advice application">
+                                <div class="card-body">
+                                    <p class="card-text  text-center h3 projectItems">
+                                        Advice
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">HTML + CSS + JavaScript + Advice API</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row ">
+
+
+
+
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/LandingPage/" target="_blank"
+                                class="text-dark text-decoration-none align-middle  ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/LandingPage.png" alt="Landing Page" aria-label="Landing Page">
+                                <div class="card-body">
+                                    <p class="card-text  text-center h3 projectItems">
+
+
+                                        Landing Page
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">HTML + JavaScript</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/registrationPage/" target="_blank"
+                                class="text-dark text-decoration-none align-middle ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/HtmlFormRegistration.png" alt="form registration"
+                                    aria-label="form registration">
+                                <div class="card-body">
+                                    <p class="card-text text-center h3 projectItems">
+                                        Simple form
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                        <small class="text-muted">HTML</small>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/calculator/" target="_blank"
+                                class="text-dark text-decoration-none align-middle ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/calc.png" alt="calculator" aria-label="calculator">
+                                <div class="card-body">
+                                    <p class="card-text text-center h3 projectItems">
+                                        Calculator
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                        <small class="text-muted">React</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm project-tile">
+                            <a href="https://rahunak.github.io/note-editor/" target="_blank"
+                                class="text-dark text-decoration-none align-middle ">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                                    src="images/note-editor-short.png" alt="noteEditor" aria-label="noteEditor">
+                                <div class="card-body">
+                                    <p class="card-text text-center h3 projectItems">
+                                        Note editor
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                        <small class="text-muted">React</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="px-5 footerItems ">
-                    <a href="https://www.linkedin.com/in/rahunak/" target="_blank"
-                       class="text-dark text-decoration-none">
-                        <p class="h2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                 class="bi bi-linkedin" viewBox="0 0 16 20">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                            </svg>
-                            Linkedin
-                        </p>
-                    </a>
+                <div class="row">
+                    <div class="col d-flex flex-row justify-content-center align-items-center py-5">
+                        <div class="btn btn-outline-secondary px-3">
+                            <a href="https://github.com/rahunak" class="text-decoration-none text-dark" target="_blank">
+                                <p class="display-6 my-auto text-center">Show all
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-box-arrow-in-right my-auto" viewBox="2 2 15 15">
+                                        <path fill-rule="evenodd"
+                                            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="px-5  footerItems">
-                    <a href="tel:+375257810998" class="text-decoration-none text-dark">
-                        <p class="h2">
+        </section>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                 class="bi bi-phone" viewBox="0 0 16 20">
-                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                            </svg>
-                            Call me
+        <section class="col py-0 vh-100 text-center container ">
 
-                        </p>
-                    </a>
+            <div class="mx-auto h-100 d-flex flex-column justify-content-center align-items-center ">
+
+                <div class="mb-5">
+                    <h1 class="fw-light display-1 fw-bold">Let's work together...</h1>
+                    <p class="lead text-muted display-6">How do you take your coffee?</p>
                 </div>
+                <div class="d-flex flex-row justify-content-center vw-100 ">
 
+                    <div class="px-5 footerItems">
+                        <a href="#">
 
+                            <p class="h2 ">
+                                <a href="https://github.com/rahunak" target="_blank"
+                                    class="text-dark text-decoration-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 20">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                    Git
+                                </a>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="px-5 footerItems ">
+                        <a href="https://www.linkedin.com/in/rahunak/" target="_blank"
+                            class="text-dark text-decoration-none">
+                            <p class="h2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 20">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                                Linkedin
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="px-5  footerItems">
+                        <a href="tel:+375257810998" class="text-decoration-none text-dark">
+                            <p class="h2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-phone" viewBox="0 0 16 20">
+                                    <path
+                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                </svg>
+                                Call me
+                            </p>
+                        </a>
+                    </div>
+                </div>
             </div>
 
 
-        </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid " id="footer">
 
 
-    </section>
-</main>
 
-<footer class="container-fluid " id="footer">
+    </footer>
 
 
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
