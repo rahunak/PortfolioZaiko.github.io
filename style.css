@@ -1,48 +1,54 @@
+.projectItems {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+
+}
+
+.projectItems::before {
+    content: "<";
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.projectItems::after {
+    content: "/>";
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.projectItems:hover::after,
+.projectItems:hover::before {
+    opacity: 1;
+}
+
+.footerItems:hover {
+    animation-duration: 500ms;
+    animation-name: moveLink;
+    animation-iteration-count: 1;
+}
+
+@keyframes moveLink {
+    20% {
+        transform: translateY(-4px);
+    }
+
+    40% {
+        transform: translateY(4px);
+    }
+
+    60% {
+        transform: translateY(-2px);
+    }
+
+    80% {
+        transform: translateY(2px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
 
 
-        .projectItems {
-            padding: 0;
-            margin: 0;
-            opacity: 1;
 
-        }
-
-        .projectItems::before {
-            content: "<";
-            opacity: 0;
-            transition: opacity 500ms;
-        }
-
-        .projectItems::after {
-            content: "/>";
-            opacity: 0;
-            transition: opacity 500ms;
-        }
-
-        .projectItems:hover::after, .projectItems:hover::before {
-            opacity: 1;
-        }
-
-        .footerItems:hover {
-            animation-duration: 500ms;
-            animation-name: moveLink;
-            animation-iteration-count: 1;
-        }
-
-        @keyframes moveLink {
-            20% {
-                transform: translateY(-4px);
-            }
-            40% {
-                transform: translateY(4px);
-            }
-            60% {
-                transform: translateY(-2px);
-            }
-            80% {
-                transform: translateY(2px);
-            }
-            to {
-                transform: translateY(0px);
-            }
-        }
