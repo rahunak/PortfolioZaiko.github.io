@@ -22,7 +22,7 @@
           <p class="text-muted">
             Name: <b>Eugenii</b><br />
             Surname:<b>Zaiko</b><br />
-            Phone:+375257810998<br />
+            Phone:<span class="phone">+375257810998</span><br />
             English: B1<br />
           </p>
         </div>
@@ -30,18 +30,19 @@
           <h4 class="text-white">Skills</h4>
           <ul class="list-unstyled">
             <li>
-              <a target="_blank" href="https://github.com/rahunak?tab=repositories" class="text-white"
-                id="profile-link">GitHub</a>
+              <a target="_blank" href="https://github.com/rahunak?tab=repositories"
+                class="text-white text-decoration-none" id="profile-link">GitHub</a>
             </li>
             <li>
-              <a target="_blank" href="https://www.linkedin.com/in/rahunak/" class="text-white">Linkedin</a>
+              <a target="_blank" href="https://www.linkedin.com/in/rahunak/"
+                class="text-white text-decoration-none">Linkedin</a>
             </li>
             <li>
-              <a target="_blank" href="https://t.me/smallRabbit66" class="text-white">Telegram</a>
+              <a target="_blank" href="https://t.me/smallRabbit66" class="text-white text-decoration-none">Telegram</a>
             </li>
             <li>
               <a target="_blank" href="https://rabota.by/resume/870a400cff08f76f6e0039ed1f364437514b58"
-                class="text-white">Rabota.by</a>
+                class="text-white text-decoration-none">Rabota.by</a>
             </li>
 
 
@@ -51,9 +52,11 @@
     </div>
 
     <nav class="navbar navbar-dark bg-dark shadow-sm px-5 fixed-top" id="navbar">
-      <a class="nav-item text-white text-decoration-none" href="#top">About me</a>
+      <a class="nav-item text-white text-decoration-none" href="#top" data-bs-toggle="collapse"
+        data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+        aria-label="Toggle navigation">About me</a>
       <a class="nav-item text-white text-decoration-none" href="#mainProjects">Projects</a>
-      <a class="nav-item text-white text-decoration-none" href="#footer">Contacts</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
         aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -73,14 +76,14 @@
       id="mainProjects">
       <div class="container">
         <div class="row mx-auto my-3">
-          <h2 class="text-center py-5 h1">These are some of my projects</h2>
+          <h2 class="text-center py-5 h1 title-h2">These are some of my projects</h2>
         </div>
         <div class="row mx-auto my-3">
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
               <a href="https://rahunak.github.io/advice/" target="_blank"
-                class="text-dark text-decoration-none align-middle">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                class="text-dark text-decoration-none align-middle blockForImage">
+                <img class="bd-placeholder-img card-img-top blockForImage__image" width="100%"
                   src="images/advice-mobile-design.jpg" alt="advice " aria-label="Advice application" />
                 <div class="card-body">
                   <p class="card-text text-center h3 projectItems">Advice</p>
@@ -95,8 +98,8 @@
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
               <a href="https://rahunak.github.io/note-editor/" target="_blank"
-                class="text-dark text-decoration-none align-middle">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="280"
+                class="text-dark text-decoration-none align-middle blockForImage">
+                <img class="bd-placeholder-img card-img-top blockForImage__image" width="100%"
                   src="images/note-editor-short.png" alt="noteEditor" aria-label="noteEditor" />
                 <div class="card-body">
                   <p class="card-text text-center h3 projectItems">
@@ -111,8 +114,9 @@
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rahunak.github.io/AlfaDigitalAgency/dist/" target="_blank" class="text-decoration-none">
-                <img class="w-100" height="280" src="images/AlfaDigitalAgency.jpg" alt="shelter "
+              <a href="https://rahunak.github.io/AlfaDigitalAgency/dist/" target="_blank"
+                class="text-decoration-none blockForImage">
+                <img class=" blockForImage__image" src="images/AlfaDigitalAgency.jpg" alt="shelter "
                   aria-label="AlfaDigitalAgency application" />
                 <div class="card-body">
                   <p class="text-dark text-center h5 projectItems px-0">
@@ -131,8 +135,8 @@
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
               <a href="https://rolling-scopes-school.github.io/rahunak-JSFE2022Q1/SHELTER/" target="_blank"
-                class="text-decoration-none">
-                <img class="w-100" height="280" src="images/shelter.png" alt="shelter "
+                class="text-decoration-none blockForImage">
+                <img class=" blockForImage__image" src="images/shelter.png" alt="shelter "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">Shelter</p>
@@ -147,8 +151,8 @@
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
               <a href="https://rahunak.github.io/cssMemSlider/cssMemeSlider/" target="_blank"
-                class="text-decoration-none">
-                <img class="w-100" height="280" src="images/slider.png" alt="shelter "
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/slider.png" alt="shelter "
                   aria-label="slider application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">Slider</p>
@@ -162,8 +166,9 @@
 
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rahunak.github.io/Dictionary/" target="_blank" class="text-decoration-none">
-                <img class="w-100" height="280" src="images/dictionary.png" alt="shelter "
+              <a href="https://rahunak.github.io/Dictionary/" target="_blank"
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/dictionary.png" alt="shelter "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
@@ -182,8 +187,9 @@
 
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rahunak.github.io/virtual-keyboard/dist/" target="_blank" class="text-decoration-none">
-                <img class="w-100" height="280" src="images/keyboard.png" alt="shelter "
+              <a href="https://rahunak.github.io/virtual-keyboard/dist/" target="_blank"
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/keyboard.png" alt="shelter "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
@@ -200,8 +206,8 @@
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
               <a href="https://rolling-scopes-school.github.io/rahunak-JSFE2022Q3/codejam/" target="_blank"
-                class="text-decoration-none">
-                <img class="w-100" height="280" src="images/codeJam.png" alt="codeJam "
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/codeJam.png" alt="codeJam "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
@@ -218,8 +224,8 @@
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
               <a href="https://rolling-scopes-school.github.io/rahunak-JSFE2022Q3/songBird/" target="_blank"
-                class="text-decoration-none">
-                <img class="w-100" height="280" src="images/songBird_quiz.png" alt="shelter "
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/songBird_quiz.png" alt="shelter "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
@@ -242,8 +248,9 @@
 
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rahunak.github.io/Hedgehogs/dist/" target="_blank" class="text-decoration-none">
-                <img class="w-100" height="280" src="images/hedgehogs.png" alt="hedgehogs "
+              <a href="https://rahunak.github.io/Hedgehogs/dist/" target="_blank"
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/hedgehogs.png" alt="hedgehogs "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
@@ -259,9 +266,9 @@
 
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rolling-scopes-school.github.io/rahunak-JSFE2022Q3/online-zoo/dist/" target="_blank"
-                class="text-decoration-none">
-                <img class="w-100" height="280" src="images/online-zoo.png" alt="online-zoo "
+              <a href="https://rolling-scopes-school.github.io/rahunak-JSFE2022Q3/online-zoo" target="_blank"
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/online-zoo.png" alt="online-zoo "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
@@ -277,8 +284,9 @@
 
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rahunak.github.io/efimchik-landing/" target="_blank" class="text-decoration-none">
-                <img class="w-100" height="280" src="images/efimchik-landing.png" alt="shelter "
+              <a href="https://rahunak.github.io/efimchik-landing/" target="_blank"
+                class="text-decoration-none blockForImage">
+                <img class="blockForImage__image" src="images/efimchik-landing.png" alt="shelter "
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
@@ -306,15 +314,13 @@
       <div class="mx-auto h-100 d-flex flex-column justify-content-center align-items-center">
         <div class="mb-5">
           <h1 class="fw-light display-1 fw-bold">Let's work together...</h1>
-          <p class="lead text-muted display-6">
-            How do you take your coffee?
-          </p>
+
         </div>
-        <div class="d-flex flex-row justify-content-center w-100">
+        <div class="d-flex flex-row justify-content-center ">
           <div class="footerItems p-3">
             <a href="#">
               <p class="h2">
-                <a href="https://github.com/rahunak" target="_blank" class="text-dark text-decoration-none">
+                <a href="https://github.com/rahunak" target="_blank" class="text-dark text-decoration-none ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-github" viewBox="0 0 16 20">
                     <path

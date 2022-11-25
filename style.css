@@ -1,3 +1,15 @@
+* {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.phone {
+    -moz-user-select: all;
+    -khtml-user-select: all;
+    user-select: all;
+}
+
 .projectItems {
     padding: 0;
     margin: 0;
@@ -17,15 +29,39 @@
     transition: opacity 500ms;
 }
 
-.projectItems:hover::after,
-.projectItems:hover::before {
-    opacity: 1;
-}
-
 .footerItems:hover {
     animation-duration: 500ms;
     animation-name: moveLink;
     animation-iteration-count: 1;
+}
+
+.blockForImage {
+    overflow: hidden;
+    height: 365px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.blockForImage:hover .projectItems::after {
+    opacity: 1;
+}
+
+.blockForImage:hover .projectItems::before {
+    opacity: 1;
+}
+
+.blockForImage:hover .blockForImage__image {
+    transform: scale(1.1);
+    transition: all ease-in-out 400ms;
+    border-radius: 10%;
+}
+
+.blockForImage__image {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 70%;
 }
 
 @keyframes moveLink {
@@ -49,6 +85,3 @@
         transform: translateY(0px);
     }
 }
-
-
-
