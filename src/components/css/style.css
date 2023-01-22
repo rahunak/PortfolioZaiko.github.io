@@ -41,8 +41,11 @@
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
+    
 }
-
+.blockForImage .blockForImage__image {
+    transition: all ease-in-out 400ms;
+}
 .blockForImage:hover .projectItems::after {
     opacity: 1;
 }
