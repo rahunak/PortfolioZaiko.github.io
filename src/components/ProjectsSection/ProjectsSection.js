@@ -8,7 +8,7 @@ function ProjectsSection(){
         <div className="container">
           <div className="row mx-auto my-3">
             <h2 className="text-center py-5 h1 title-h2">These are some of my projects</h2>
-          </div>/PortfolioZaiko.2.github.io/my-app/src/files/js/data.js
+          </div> 
           <div className="row mx-auto my-3">
            { projectsImagesArr.map(el=><ProjectTile key={el.src} project={el}/>) }
           </div>
