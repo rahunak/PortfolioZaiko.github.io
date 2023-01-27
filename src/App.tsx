@@ -5,14 +5,15 @@ import './files/js/bootstrap.bundle.min.js';
 import './files/js/bootstrap.bundle.min.js.map';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
-function App() {
 
+export default class App extends React.Component {
+  render(): React.ReactNode {
   return (
     <div className="App">
-      <Header /> 
-      <Main />
+       <Header /> 
+       <Main />
     </div>
   );
-}
+  }
 
-export default App;
+}

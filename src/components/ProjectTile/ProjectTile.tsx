@@ -1,5 +1,5 @@
 import React from 'react';
-interface Project{
+type Project = {
   src: string;
   href: string;
   alt: string;
@@ -8,10 +8,15 @@ interface Project{
   subtitle: string;
 }
 
-function ProjectTile( project:Project ) { 
-  const {
-    src, href, alt, ariaLabel, title, subtitle,
-  } = project;
+function ProjectTile(props:any) { 
+  const src = props.project.src;
+  const href = props.project.href;
+  const alt = props.project.alt;
+  const ariaLabel = props.project.ariaLabel;
+  const title = props.project.title;
+  const subtitle = props.project.subtitle;
+
+
   return (
     <div className="col-xl-4 col-md-6 col-sm-12 my-3">
       <div className="card shadow-sm project-tile">
@@ -36,6 +41,7 @@ function ProjectTile( project:Project ) {
         </a>
       </div>
     </div>
+
   );
 }
 
