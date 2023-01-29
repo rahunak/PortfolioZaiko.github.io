@@ -3,6 +3,7 @@ import './files/css/bootstrap.min.css';
 import './files/css/style.css';
 import './files/js/bootstrap.bundle.min.js';
 import './files/js/bootstrap.bundle.min.js.map';
+import './files/scss/main.scss';//
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 

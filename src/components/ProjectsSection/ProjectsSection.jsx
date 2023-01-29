@@ -2,14 +2,7 @@ import React,{ useEffect, useState }  from 'react';
 
 import projectsImagesArr from '../../files/js/data';
 import ProjectTile from '../ProjectTile/ProjectTile';
-type Project = {
-  src: string;
-  href: string;
-  alt: string;
-  ariaLabel: string;
-  title: string;
-  subtitle: string;
-}
+
 function ProjectsSection (){
 
     return (
