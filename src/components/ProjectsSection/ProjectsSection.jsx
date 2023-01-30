@@ -1,10 +1,21 @@
-import React,{ useEffect, useState }  from 'react';
+import React, { useEffect, useState } from 'react';
 
 import projectsImagesArr from '../../files/js/data';
 import ProjectTile from '../ProjectTile/ProjectTile';
 
-function ProjectsSection (){
+import { Link } from "react-router-dom";
 
+class ProjectsSection extends React.Component {
+  componentDidMount() {
+    console.log('componentDidMount');
+  }
+  componentDidUpdate() {
+    console.log('componentDidUpdate');
+  }
+  componentWillUnmount() {
+    console.log('componentWillUnmount');
+  }
+  render() {
     return (
       <section
         className="col album py-5 bg-light min-vh-100 g-3 d-flex justify-content-center align-items-center"
@@ -15,13 +26,12 @@ function ProjectsSection (){
             <h2 className="text-center py-5 h1 title-h2">These are some of my projects</h2>
           </div>
           <div className="row mx-auto my-3">
+            {projectsImagesArr.map((el) => <ProjectTile key={el.src + el.href} project={el} />)}
 
-
-
-            { projectsImagesArr.map((el) => <ProjectTile key={el.src+el.href} project={el} />) }
           </div>
         </div>
       </section>
     );
   }
+}
 export default ProjectsSection;

@@ -1,0 +1,103 @@
+html {
+    --num: 17162;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .box {
+    background: linear-gradient(35deg, red, #ff0);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .curve_wrapp {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .curve {
+    /* ширина надписи, высота автоматически подстраивается */
+    position: absolute;
+    z-index: 1;
+    width: 60vw;
+  }
+  
+  .bg {
+    /* двигающийся задний фон */
+    position: absolute;
+    z-index: 1;
+    width: 400vw;
+    height: 400vh;
+    top: -100vh;
+    left: 0;
+    background: linear-gradient(rgb(204, 0, 255), rgb(255, 255, 0));
+    animation: bg infinite 3s ease-in-out forwards;
+    transform-origin: top left;
+  }
+  
+  path {
+    /* настройки линии
+  stroke-dasharray - подбирается индивидуально
+    */
+    stroke: rgb(0, 0, 0);
+    stroke-width: 2; 
+    stroke-dashoffset: var(--num);
+    stroke-dasharray: var(--num);
+    filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 0.4));
+    animation: draw 10s forwards infinite cubic-bezier(.37, .67, .19, .94);
+  }
+  
+  @keyframes draw {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes bg {
+    0% {
+      transform: rotate(0);
+    }
+    12% {
+      transform: rotate(6deg);
+    }
+    25% {
+      transform: rotate(12deg);
+    }
+    36%{
+      transform: rotate(18deg);
+    }
+    50% {
+      transform: rotate(24deg);
+    }
+    62%{
+      transform: rotate(18deg);
+    }
+    75% {
+      transform: rotate(12deg);
+    }
+    86%{
+        transform: rotate(6deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  @media (max-width:600px) {
+    .curve_wrapp {
+      align-items: flex-start;
+      padding-top: 10vh;
+    }
+  
+    .curve {
+      width: 90vw;
+    }
+  }

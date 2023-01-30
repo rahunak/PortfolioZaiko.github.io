@@ -1,0 +1,12 @@
+.experiment {
+    border-bottom: none;
+    text-decoration: none;
+}
+.textLink {
+    color: inherit;
+    text-decoration: inherit;
+}
+.textLink :hover{
+    color: black;
+    text-decoration: inherit;
+}

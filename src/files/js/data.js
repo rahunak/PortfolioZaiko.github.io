@@ -119,4 +119,13 @@ export default [
     title: 'Garland',
     subtitle: 'HTML + Scss'
   }
+  , {
+    href: 'https://rahunak.github.io/lettering/',
+    src: 'images/lettering.png',
+    alt: '',
+    ariaLabel: '',
+    title: 'lettering',
+    subtitle: 'HTML + Scss + SVG',
+    reactLinkTo:'lettering',
+  }
 ];

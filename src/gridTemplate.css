@@ -1,0 +1,19 @@
+.App{
+  display: grid;
+  grid-template-areas:
+  "headerGridBlock" 
+   "leftGridBlock rightGridBlock rightGridBlock"  
+   "leftGridBlock rightGridBlock rightGridBlock" ;
+  grid-template-columns: 1fr 11fr;
+  grid-template-rows: 10vh 1fr;
+  }
+
+.headerGridBlock{
+  grid-area: "headerGridBlock";
+}
+.leftGridBlock{
+  grid-area: "leftGridBlock";
+}
+.rightGridBlock{
+  grid-area: "rightGridBlock"; 
+}

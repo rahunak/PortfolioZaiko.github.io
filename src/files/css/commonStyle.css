@@ -1,0 +1,26 @@
+.NavLink_black{
+    text-decoration: none;
+    color:black
+}
+.NavLink_white{
+    text-decoration: none;
+    color: white;
+}
+.NavLink_white:hover{
+    color:gray
+}
+.gradientLink{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    background: linear-gradient(to right, red,yellow,green);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+  }
+  
+  .gradientLink:hover{
+   background-size: 100% 3px;
+   transition: background-size 0.5s ease-in-out;
+  }

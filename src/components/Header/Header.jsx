@@ -1,8 +1,9 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
+import styles from '../../files/css/commonStyle.css';
 function Header() {
   return (
-    <header className="header">
+    <header className="header headerGridBlock">
       <div className="collapse bg-dark fixed-top" id="navbarHeader">
         <div className="row px-5">
           <div className="col-sm-4 col-md-4 py-4">
@@ -66,20 +67,7 @@ function Header() {
       </div>
 
       <nav className="navbar navbar-dark bg-dark shadow-sm px-5 fixed-top" id="navbar">
-        <a
-          className="nav-item text-white text-decoration-none"
-          href="#top"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarHeader"
-          aria-controls="navbarHeader"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          About me
-        </a>
-        <a className="nav-item text-white text-decoration-none" href="#mainProjects">Projects</a>
-
-        <button
+      <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -90,6 +78,15 @@ function Header() {
         >
           <span className="navbar-toggler-icon" />
         </button>
+        <NavLink to='projects' className="NavLink_white gradientLink">
+        Projects
+        </NavLink>
+        <NavLink to='aboutMe' className="NavLink_white gradientLink">
+          About me
+        </NavLink>
+        
+
+        
       </nav>
     </header>
   );

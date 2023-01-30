@@ -5,9 +5,9 @@ import ContactsSection from '../ContactsSection/ContactsSection';
 
 function Main() {
   return (
-    <main>
+    <main className="rightGridBlock">
       <WelcomeSection />
-
+    
       <ProjectsSection />
 
       <ContactsSection />

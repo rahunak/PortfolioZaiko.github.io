@@ -1,0 +1,13 @@
+.btn_back_wrapper{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn_back{
+    position: relative;
+    z-index: 1000;
+    padding: 5px;
+    border-radius: 5px;
+}

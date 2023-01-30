@@ -1,0 +1,4 @@
+.leftGridBlock{
+    grid-area: "leftGridBlock";
+    background-color: blueviolet;
+}
