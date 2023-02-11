@@ -1,16 +1,34 @@
 
+import adviceImg from '../images/advice-mobile-design.jpg';
+import noteImg from '../images/note-editor-short.png';
+import AlfaDigitalAgency from '../images/AlfaDigitalAgency.jpg';
+import shelter from '../images/shelter.png';
+import cssMemeSlider from '../images/cssMemeSlider.png';
+import dictionary from '../images/dictionary.png';
+import keyboard from '../images/keyboard.png';
+import codeJam from '../images/codeJam.png';
+import songBirdQuiz from '../images/songBird_quiz.png';
+import hedgehogs from '../images/hedgehogs.png';
+import onlineZoo from '../images/online-zoo.png';
+import efimchikLanding from '../images/efimchik-landing.png';
+import circleSlider from '../images/circleSlider.png';
+import menuItems from '../images/menu_items.png';
+import garland from '../images/garland.png';
+import lettering from '../images/lettering.png';
+
 export default [
   {
     href: 'https://rahunak.github.io/advice/',
-    src: '/images/advice-mobile-design.jpg',
-    alt: '',
-    ariaLabel: '',
+    src: adviceImg,
+    alt: 'Advice',
+    ariaLabel: 'Advice',
     title: 'Advice',
-    subtitle: 'HTML + CSS + JavaScript + Advice API'
+    subtitle: 'HTML + CSS + JavaScript + Advice API',
+    reactLinkTo:'advice',
   },
   {
     href: 'https://rahunak.github.io/note-editor/',
-    src: 'images/note-editor-short.png',
+    src: noteImg,
     alt: '',
     ariaLabel: '',
     title: ' Note editor',
@@ -18,7 +36,7 @@ export default [
   },
   {
     href: 'https://rahunak.github.io/AlfaDigitalAgency/dist/',
-    src: 'images/AlfaDigitalAgency.jpg',
+    src: AlfaDigitalAgency,
     alt: '',
     ariaLabel: '',
     title: ' AlfaDigitalAgency',
@@ -26,7 +44,7 @@ export default [
   },
   {
     href: 'https://rolling-scopes-school.github.io/rahunak-JSFE2022Q1/SHELTER/',
-    src: 'images/shelter.png',
+    src: shelter,
     alt: '',
     ariaLabel: '',
     title: 'Shelter',
@@ -35,7 +53,7 @@ export default [
 
   {
     href: 'https://rahunak.github.io/cssMemSlider/cssMemeSlider/',
-    src: 'images/slider.png',
+    src: cssMemeSlider,
     alt: '',
     ariaLabel: '',
     title: 'Slider',
@@ -43,7 +61,7 @@ export default [
   },
   {
     href: 'https://rahunak.github.io/Dictionary/"',
-    src: 'images/dictionary.png',
+    src: dictionary,
     alt: '',
     ariaLabel: '',
     title: 'Dictionary',
@@ -51,7 +69,7 @@ export default [
   },
   {
     href: 'https://rahunak.github.io/virtual-keyboard/dist/',
-    src: 'images/keyboard.png',
+    src: keyboard,
     alt: '',
     ariaLabel: '',
     title: 'Keyboard',
@@ -59,7 +77,7 @@ export default [
   },
   {
     href: 'https://rolling-scopes-school.github.io/rahunak-JSFE2022Q3/codejam/',
-    src: 'images/codeJam.png',
+    src: codeJam,
     alt: '',
     ariaLabel: '',
     title: 'code Jam',
@@ -67,7 +85,7 @@ export default [
   },
   {
     href: 'https://rolling-scopes-school.github.io/rahunak-JSFE2022Q3/songBird/',
-    src: 'images/songBird_quiz.png',
+    src: songBirdQuiz,
     alt: '',
     ariaLabel: '',
     title: 'Song Bird',
@@ -75,7 +93,7 @@ export default [
   },
   {
     href: 'https://rahunak.github.io/Hedgehogs/dist/',
-    src: 'images/hedgehogs.png',
+    src: hedgehogs,
     alt: '',
     ariaLabel: '',
     title: 'Hedgehogs',
@@ -83,7 +101,7 @@ export default [
   },
   {
     href: 'https://rolling-scopes-school.github.io/rahunak-JSFE2022Q3/online-zoo',
-    src: 'images/online-zoo.png',
+    src: onlineZoo,
     alt: '',
     ariaLabel: '',
     title: 'Online Zoo',
@@ -91,7 +109,7 @@ export default [
   },
   {
     href: 'https://rahunak.github.io/EfimchikStudio/',
-    src: 'images/efimchik-landing.png',
+    src: efimchikLanding,
     alt: '',
     ariaLabel: '',
     title: 'Efimchik landing',
@@ -99,29 +117,31 @@ export default [
   },
   {
     href: 'https://rahunak.github.io/circle-slider/slider/',
-    src: 'images/circleSlider.png',
+    src: circleSlider,
     alt: '',
     ariaLabel: '',
     title: 'Slider',
-    subtitle: 'HTML + Scss'
+    subtitle: 'HTML + Scss',
+    reactLinkTo:'circleSlider',
   }, {
     href: 'https://rahunak.github.io/bare-bouns-template/menu_items/',
-    src: 'images/menu_items.png',
+    src: menuItems,
     alt: '',
     ariaLabel: '',
     title: 'menu links',
-    subtitle: 'HTML + Scss + JS'
+    subtitle: 'HTML + Scss + JS',
+    reactLinkTo:'menuItems',
   }, {
     href: 'https://rahunak.github.io/bare-bouns-template/garland/',
-    src: 'images/garland.png',
+    src: garland,
     alt: '',
     ariaLabel: '',
     title: 'Garland',
-    subtitle: 'HTML + Scss'
+    subtitle: 'HTML + Scss',
   }
   , {
     href: 'https://rahunak.github.io/lettering/',
-    src: 'images/lettering.png',
+    src: lettering,
     alt: '',
     ariaLabel: '',
     title: 'lettering',

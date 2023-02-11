@@ -1,5 +1,5 @@
 import React from "react";
-import BackBtn from "../buttons/backBtn/BackBtn";
+import BackBtn from "../../buttons/backBtn/BackBtn";
 import './style.css';
 function Lettering (){
 

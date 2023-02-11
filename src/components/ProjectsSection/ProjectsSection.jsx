@@ -1,20 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-import projectsImagesArr from '../../files/js/data';
+import projectsImagesArr from '../../files/js/imagesForProjectTiles';
 import ProjectTile from '../ProjectTile/ProjectTile';
 
 import { Link } from "react-router-dom";
 
 class ProjectsSection extends React.Component {
-  componentDidMount() {
-    console.log('componentDidMount');
-  }
-  componentDidUpdate() {
-    console.log('componentDidUpdate');
-  }
-  componentWillUnmount() {
-    console.log('componentWillUnmount');
-  }
   render() {
     return (
       <section

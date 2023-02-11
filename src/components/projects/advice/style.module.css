@@ -1,0 +1,119 @@
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --neon-green-light: hsl(150, 100%, 76%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+.advice {
+    box-sizing: border-box;
+    background-color: var(--dark-grayish-blue);
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width:320px) {
+    .advice {
+        margin: 2rem auto;
+        background-color: var(--grayish-blue);
+        border-radius: 1rem;
+        max-width: 320px;
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label {
+        font-weight: 400;
+        letter-spacing: 0.4em;
+        padding: 1.5rem;
+        font-family: Manrope;
+        color: var(--neon-green);
+    }
+
+    .textAdvice {
+        color: var(--light-cyan);
+        font-family: Manrope;
+        padding: 0 1rem 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .line {
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        position: relative;
+        top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--neon-green);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .btn svg {
+        fill: var(--dark-grayish-blue);
+    }
+
+    .btn:hover {
+        box-shadow: 0 0 30px 10px var(--neon-green-light);
+    }
+
+    .spin {
+        animation:800ms ease  infinite spinner ; 
+    }
+    .spin_pause {
+        animation:800ms ease  infinite spinner ; 
+        animation-play-state: paused;
+    }
+    .attribution {
+        position: fixed;
+        bottom: 5px;
+        left: 44%;
+    }
+}
+
+@media (min-width:375px) {
+    .advice {
+        max-width: 345px;
+        min-width: 305px;
+    }
+
+    .line {
+        min-width: 305px;
+    }
+
+}
+
+@media (min-width:1440px) {
+    .advice {
+        max-width: 690px;
+        min-width: 710px;
+    }
+
+    .line {
+        min-width: 710px;
+    }
+}
+

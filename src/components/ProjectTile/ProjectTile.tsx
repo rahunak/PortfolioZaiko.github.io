@@ -15,6 +15,16 @@ class ProjectTile extends React.Component<any> {
   constructor(props: TProject) {
     super(props);
   }
+  componentDidMount() {
+    console.log('componentDidMount',this.props.project.title);
+  }
+  componentDidUpdate() {
+    console.log('componentDidUpdate',this.props.project.title);
+  }
+  componentWillUnmount() {
+    console.log('componentWillUnmount',this.props.project.title);
+  }
+
  render(){
   const reactLinkTo  = this.props.project.reactLinkTo;
   const src = this.props.project.src;
@@ -23,7 +33,7 @@ class ProjectTile extends React.Component<any> {
   const title = this.props.project.title;
   const subtitle = this.props.project.subtitle;
   const href = this.props.project.href;
-  if(reactLinkTo){
+  if(reactLinkTo !== null && reactLinkTo !== undefined){
     return(
       <div className="col-xl-4 col-md-6 col-sm-12 my-3 ">
       <Link to={reactLinkTo} className={styles.textLink}>

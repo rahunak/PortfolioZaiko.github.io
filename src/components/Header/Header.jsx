@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styles from '../../files/css/commonStyle.css';
 function Header() {
   return (
-    <header className="header headerGridBlock">
+    <header className="header">
       <div className="collapse bg-dark fixed-top" id="navbarHeader">
         <div className="row px-5">
           <div className="col-sm-4 col-md-4 py-4">

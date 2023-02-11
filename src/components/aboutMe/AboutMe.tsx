@@ -1,10 +1,12 @@
 import React from 'react';
+import ContactsSection from '../ContactsSection/ContactsSection';
 import WelcomeSection from '../WelcomeSection/WelcomeSection';
 import style from './style.module.css';
 function AboutMe() {
   return (
-    <div className="aboutMe">
+    <div className={style.aboutMe}>
         <WelcomeSection/>
+        <ContactsSection/>
     </div>
   );
 }

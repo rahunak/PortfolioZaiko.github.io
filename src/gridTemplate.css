@@ -2,18 +2,18 @@
   display: grid;
   grid-template-areas:
   "headerGridBlock" 
-   "leftGridBlock rightGridBlock rightGridBlock"  
-   "leftGridBlock rightGridBlock rightGridBlock" ;
-  grid-template-columns: 1fr 11fr;
-  grid-template-rows: 10vh 1fr;
+   "rightGridBlock";
+
+  grid-template-columns: 1fr ;
+  grid-template-rows: 56px 1fr;
+  height: 100vh;
   }
 
 .headerGridBlock{
   grid-area: "headerGridBlock";
 }
-.leftGridBlock{
-  grid-area: "leftGridBlock";
-}
+
 .rightGridBlock{
   grid-area: "rightGridBlock"; 
+  height: 100%;
 }

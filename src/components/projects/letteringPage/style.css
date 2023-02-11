@@ -9,7 +9,7 @@ html {
   
   .box {
     background: linear-gradient(35deg, red, #ff0);
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
   }
@@ -94,7 +94,7 @@ html {
   @media (max-width:600px) {
     .curve_wrapp {
       align-items: flex-start;
-      padding-top: 10vh;
+      padding-top: 0;
     }
   
     .curve {
