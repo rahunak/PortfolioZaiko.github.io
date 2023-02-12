@@ -17,7 +17,7 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(180deg);
     }
 }
 
@@ -81,11 +81,7 @@
     }
 
     .spin {
-        animation:800ms ease  infinite spinner ; 
-    }
-    .spin_pause {
-        animation:800ms ease  infinite spinner ; 
-        animation-play-state: paused;
+        animation:300ms ease  infinite spinner ; 
     }
     .attribution {
         position: fixed;

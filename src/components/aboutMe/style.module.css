@@ -1,4 +1,5 @@
 .aboutMe{
     max-height: calc(100% - 56px);
+    transform: translateY(-56px);
     height: 100%;
 }

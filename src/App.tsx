@@ -11,6 +11,7 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection';
 import CircleSlider from './components/projects/sliders/CircleSlider';
 import MenuItems from './components/projects/menuItems/menuItems';
 import Advice from './components/projects/advice/Advice';
+import BackBtn from './components/buttons/backBtn/BackBtn';
 
 export default class App extends React.Component {
   render(): React.ReactNode {
@@ -19,13 +20,14 @@ export default class App extends React.Component {
         <Header />
           <div className="rightGridBlock">
             <Routes >
-              <Route path='/aboutMe' element={<AboutMe />} />
+              <Route path='/' element={<AboutMe />} />
               <Route path='/projects' element={<ProjectsSection />} />
               <Route path='/projects/lettering' element={<Lettering />} />
               <Route path='/projects/circleSlider' element={<CircleSlider />} />
               <Route path='/projects/menuItems' element={<MenuItems />} />
               <Route path='/projects/advice' element={<Advice />} />
             </Routes >
+            <BackBtn path={window.location.pathname}/>
           </div>
       </div>
     );

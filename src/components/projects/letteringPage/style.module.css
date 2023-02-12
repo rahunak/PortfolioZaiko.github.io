@@ -42,7 +42,7 @@ html {
     transform-origin: top left;
   }
   
-  path {
+  .path {
     /* настройки линии
   stroke-dasharray - подбирается индивидуально
     */

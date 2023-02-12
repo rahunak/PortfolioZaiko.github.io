@@ -15,7 +15,6 @@ function CircleSlider() {
 
                 </div>
             </div>
-            <BackBtn />
         </React.Fragment>
     );
 }

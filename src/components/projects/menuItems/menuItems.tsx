@@ -16,7 +16,6 @@ function MenuItems() {
                 <a href="#" className={style.gradientLink}> beautiful border under the link</a>
                 <a href="#" className={style.gradientLink}> beautiful border under the link</a>
             </div>
-            <BackBtn/>
         </div>
     );
 
