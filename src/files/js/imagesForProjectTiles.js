@@ -24,7 +24,7 @@ export default [
     ariaLabel: 'Advice',
     title: 'Advice',
     subtitle: 'HTML + CSS + JavaScript + Advice API',
-    reactLinkTo:'advice',
+    reactLinkTo:'advice',//when object has reactLinkTo field, project tile has react-route link 
   },
   {
     href: 'https://rahunak.github.io/note-editor/',
@@ -32,7 +32,8 @@ export default [
     alt: '',
     ariaLabel: '',
     title: ' Note editor',
-    subtitle: 'React'
+    subtitle: 'React',
+    reactLinkTo:'noteEditor',
   },
   {
     href: 'https://rahunak.github.io/AlfaDigitalAgency/dist/',

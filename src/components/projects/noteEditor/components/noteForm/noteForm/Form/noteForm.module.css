@@ -1,0 +1,30 @@
+.noteForm {
+    background-color: #f1f3f4;
+    width: 400px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: gray solid 2px;
+    min-width: 400px;
+    min-height: 140px;
+
+}
+
+.noteForm textarea {
+
+    width: 200px;
+    height: 100px;
+    resize: none;
+}
+
+.noteForm button {
+    width: 80px;
+    height: 40px;
+    font: 14pt Georgia;
+}
+
+.noteForm button:active{
+box-shadow: #dadce0 2px 2px 2px 2px;
+}

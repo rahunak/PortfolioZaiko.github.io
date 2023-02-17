@@ -1,17 +1,47 @@
 import React from 'react';
 
+import style from './style.module.css';
 function ContactsSection() {
+  window.addEventListener('scroll', function(e) {
+    if(window.scrollY > 600 ){
+      this.document.querySelector('#contact-section').classList.remove(style.bg_black);
+      this.document.querySelector('#contact-section').classList.add(style.bg_white);
+      let texts = this.document.querySelectorAll("#contact-section a");
+     texts.forEach(link=>{
+      link.classList.add(style.text_black);
+      link.classList.remove(style.text_white);
+      });
+      this.document.querySelector('#h1').classList.add(style.text_black);
+      this.document.querySelector('#h1').classList.remove(style.text_white);
+    }else{
+      let texts = this.document.querySelectorAll("#contact-section a");
+      this.document.querySelector('#h1').classList.remove(style.text_black);
+      this.document.querySelector('#h1').classList.add(style.text_white);
+      texts.forEach(link=>{
+        link.classList.remove(style.text_black);
+        link.classList.add(style.text_white);
+        })
+      this.document.querySelector('#contact-section').classList.add(style.bg_black);
+      this.document.querySelector('#contact-section').classList.remove(style.bg_white);
+    }
+  });
   return (
-    <section className="col py-0 vh-100 text-center container">
-      <div className="mx-auto h-100 d-flex flex-column justify-content-center align-items-center">
-        <div className="mb-5">
-          <h1 className="fw-light display-1 fw-bold">Let&apos;s work together...</h1>
+    <section id="contact-section" className={style.bg_black + " col py-0 vh-100 text-center  "+style.wrapper}>
 
+      <div className="mx-auto h-100 d-flex flex-column justify-content-center align-items-center">
+
+
+
+        <div  className="mb-5">
+
+          <h1 id="h1" className={style.text_white +" fw-light display-1 fw-bold "+ style.text }>Let&apos;s work together...</h1>
         </div>
-        <div className="d-flex flex-row justify-content-center ">
+        <div className={"d-flex flex-row justify-content-center "+style.relative}>
+          <div id="placeForShapes" className={style.placeForShapes}>
+          </div>
           <div className="footerItems p-3">
             <p className="h2">
-              <a href="https://github.com/rahunak" target="_blank" className="text-dark text-decoration-none " rel="noreferrer">
+              <a href="https://github.com/rahunak" target="_blank" className={style.text_white + " text-decoration-none "+ style.text } rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -30,7 +60,7 @@ function ContactsSection() {
           </div>
 
           <div className="footerItems p-3">
-            <a href="https://www.linkedin.com/in/rahunak/" target="_blank" className="text-dark text-decoration-none" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/rahunak/" target="_blank" className={style.text_white +" text-decoration-none "+ style.text } rel="noreferrer">
               <p className="h2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,8 +80,9 @@ function ContactsSection() {
           </div>
 
           <div className="footerItems p-3">
-            <a href="tel:+375257810998" className="text-decoration-none text-dark">
-              <p className="h2">
+          <p className="h2">
+            <a href="tel:+375257810998" className={style.text_white + " text-decoration-none "+ style.text }>
+              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -66,8 +97,8 @@ function ContactsSection() {
                   <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                 </svg>
                 Call me
-              </p>
             </a>
+            </p>
           </div>
         </div>
       </div>

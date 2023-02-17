@@ -1,0 +1,12 @@
+.note-editor--wrapper {
+    display:grid;
+    grid-template-columns: 1fr 30%;
+    padding-top: 5vh;
+}
+.note-editor{
+    display:flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 10%;
+}
+ 

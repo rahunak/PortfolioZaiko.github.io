@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from '../../files/css/commonStyle.css';
+import styles from '../../../files/css/commonStyle.css';
 function Header() {
   return (
     <header className="header">

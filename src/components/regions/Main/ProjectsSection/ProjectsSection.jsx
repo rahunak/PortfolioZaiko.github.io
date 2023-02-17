@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import projectsImagesArr from '../../files/js/imagesForProjectTiles';
-import ProjectTile from '../ProjectTile/ProjectTile';
+import projectsImagesArr from '../../../../files/js/imagesForProjectTiles';
+import ProjectTile from '../../../ProjectTile/ProjectTile';
 
 import { Link } from "react-router-dom";
 

@@ -1,0 +1,39 @@
+.note_wrapper {
+    margin: 20px 0 0 0;
+    background-color: #f1f3f4;
+    border:gray solid 2px;
+    width: 400px;
+    border-radius: 30px;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.note_text_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note_text{
+    margin:0 15px;
+    padding: 5px;
+
+}
+
+.btn_close {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin:5px 20px 0 auto;
+
+}
+.note textarea{
+    width: 200px;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+}
