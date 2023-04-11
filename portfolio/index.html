@@ -7,6 +7,18 @@
   <meta name="description" content="Zaiko Eugenii Portfolio" />
   <meta name="author" content="Zaiko Rahunak Eugenii" />
   <meta name="generator" content="Hugo 0.88.1" />
+
+<!-- I created metadata using Open Graph markup for correct display. -->
+
+  <meta property="og:title" content="Зайко Евгений Full-stack Developer telegram@eugeneZaiko" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rahunak.github.io/PortfolioZaiko.github.io/portfolio" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/31304532?v=4"/>
+  <meta property="og:image:width" content="300"/>
+  <meta property="og:image:height" content="300"/>
+  <meta property="og:description" content="This is my portfolio website, which showcases my skills as a web developer. I have used a variety of technologies to build this site, including JavaScript, HTML, CSS, SCSS, Webpack, React, Redux, Bootstrap, and more."/>
+  <meta property="og:site_name" content="Zaiko Evgeny's Portfolio Website"/>
+
   <link rel="stylesheet" href="5a15592bdb6e817f6c43.css" />
   <title>Zaiko Eugenii Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,12 +29,14 @@
   <header>
     <div class="collapse bg-dark fixed-top" id="navbarHeader">
       <div class="row px-5">
-        <div class="col-sm-4 col-md-4 py-4">
+        <!-- I also used Schema.org to add microdata for search engines. -->
+        <div class="col-sm-4 col-md-4 py-4" itemscope itemtype ="https://schema.org/Person">
           <h4 class="text-white">About</h4>
           <p class="text-muted">
-            Name: <b>Eugenii</b><br />
-            Surname:<b>Zaiko</b><br />
-            Phone:<span class="phone">+375257810998</span><br />
+            Name: <b><span itemprop="name">Eugenii</span></b><br />
+            Surname:<b><span itemprop="familyName">Zaiko</span></b><br />
+            Phone:<span class="phone" itemprop="telephone">+375257810998</span><br />
+            Job:<span itemprop="jobTitle">Full-Stack Developer</span><br />
             English: B1<br />
           </p>
         </div>
