@@ -1,10 +1,12 @@
-.wrapper{
+.note_editor__wrapper{
  grid-area: content;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
  align-items: center;
- min-height: 100vh;
- 
 }
- 
+ .notesList__wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+ }

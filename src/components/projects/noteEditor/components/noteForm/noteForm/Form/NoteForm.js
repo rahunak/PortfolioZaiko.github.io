@@ -8,7 +8,7 @@ function onKeyPressHandler(e){
     }
 
 }
-    return(<div className={s.wrapper}>
+    return(<div className={s.search_form__wrapper}>
         <form className={s.noteForm}>
             <textarea
                 type="text"

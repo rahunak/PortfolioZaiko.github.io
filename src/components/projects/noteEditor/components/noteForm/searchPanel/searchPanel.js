@@ -16,7 +16,7 @@ function SearchPanel(props){
         }
 
     }
-    return(<div >
+    return(<div className={s.searchPanel__wrapper}>
             <form className={s.searchPanel} onSubmit={(e)=>onSubmitSetFilterParams(e)}>
                 <input
                     onKeyPress={(e)=>onKeyPressHandler(e)}

@@ -11,7 +11,12 @@ const NoteFormContainer = () => {
     let [filter, setFilter] = useState("");
     let [havingTag, setHavingTag] = useState(false);
     useEffect(() => {
-        setNotes( JSON.parse(localStorage.getItem("noteEditor_notes")));
+        let savedNotes = localStorage.getItem("noteEditor_notes")
+        setNotes( JSON.parse(savedNotes));
+        setHavingTag(()=>{
+            if(savedNotes) return true;
+            else return false;
+        })
     },[]);
     useEffect(() => {
         },
@@ -118,7 +123,9 @@ const NoteFormContainer = () => {
             noteId={note.id}
             tags={note.tags || []}
         />);
-    return (<div className={s.wrapper}>
+    return (
+    <div className="note-editor">
+    <div className={s.note_editor__wrapper}>
         <NoteForm
             text={currText}
             setTextNote={setTextNote}
@@ -128,10 +135,12 @@ const NoteFormContainer = () => {
             havingTag &&
             <SearchPanel setFilterParams={setFilterParams}/>
         }
-        <div className={s.notesList}>
-            {notesList}
-        </div>
+    </div>
+    <div className={s.notesList__wrapper}>
+        {notesList}
+    </div>
   
+    
     </div>);
 }
 export default NoteFormContainer;

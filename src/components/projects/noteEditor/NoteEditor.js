@@ -5,9 +5,7 @@ import SideInformation from "./components/sideInformation/sideInformation";
 function NoteEditor() {
   return (
     <div  className="note-editor--wrapper">
-      <div className="note-editor">
         <NoteFormContainer/>
-      </div>     
       <div className="aside--wrapper">
         <SideInformation/>
       </div>
