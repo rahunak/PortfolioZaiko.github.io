@@ -7,6 +7,18 @@
   <meta name="description" content="Zaiko Eugenii Portfolio" />
   <meta name="author" content="Zaiko Rahunak Eugenii" />
   <meta name="generator" content="Hugo 0.88.1" />
+
+<!-- I created metadata using Open Graph markup for correct display. -->
+
+  <meta property="og:title" content="Зайко Евгений Full-stack Developer telegram@eugeneZaiko" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rahunak.github.io/PortfolioZaiko.github.io/portfolio" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/31304532?v=4"/>
+  <meta property="og:image:width" content="300"/>
+  <meta property="og:image:height" content="300"/>
+  <meta property="og:description" content="This is my portfolio website, which showcases my skills as a web developer. I have used a variety of technologies to build this site, including JavaScript, HTML, CSS, SCSS, Webpack, React, Redux, Bootstrap, and more."/>
+  <meta property="og:site_name" content="Zaiko Evgeny's Portfolio Website"/>
+
   <link rel="stylesheet" href="5a15592bdb6e817f6c43.css" />
   <title>Zaiko Eugenii Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,12 +29,14 @@
   <header>
     <div class="collapse bg-dark fixed-top" id="navbarHeader">
       <div class="row px-5">
-        <div class="col-sm-4 col-md-4 py-4">
+        <!-- I also used Schema.org to add microdata for search engines. -->
+        <div class="col-sm-4 col-md-4 py-4" itemscope itemtype ="https://schema.org/Person">
           <h4 class="text-white">About</h4>
           <p class="text-muted">
-            Name: <b>Eugenii</b><br />
-            Surname:<b>Zaiko</b><br />
-            Phone:<span class="phone">+375257810998</span><br />
+            Name: <b><span itemprop="name">Eugenii</span></b><br />
+            Surname:<b><span itemprop="familyName">Zaiko</span></b><br />
+            Phone:<span class="phone" itemprop="telephone">+375257810998</span><br />
+            Job:<span itemprop="jobTitle">Full-Stack Developer</span><br />
             English: B1<br />
           </p>
         </div>
@@ -272,16 +286,15 @@
 
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rahunak.github.io/EfimchikStudio/" target="_blank"
+              <a href="https://rahunak.github.io/sun-and-moon/" target="_blank"
                 class="text-decoration-none blockForImage">
-                <img class="blockForImage__image" src="ac3ec601c18efdf56ea0.png" alt="shelter "
-                  aria-label="shelter application" />
+                <img class="blockForImage__image" src="ac9aae64edaf54d08413.png" alt="sun and moon "/>
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
-                    Efimchik landing
+                    sun and moon
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">HTML + Scss + JS + AOS</small>
+                    <small class="text-muted">HTML + CSS</small>
                   </div>
                 </div>
               </a>
@@ -308,13 +321,13 @@
 
           <div class="col-xl-4 col-md-6 col-sm-12 my-3">
             <div class="card shadow-sm project-tile">
-              <a href="https://rahunak.github.io/bare-bouns-template/menu_items/" target="_blank"
+              <a href="https://rahunak.github.io/lettering/" target="_blank"
                 class="text-decoration-none blockForImage">
-                <img class="blockForImage__image" src="fc282fe1939f069d5464.png" alt="menu items"
+                <img class="blockForImage__image" src="c39762fc25f01747505f.png" alt="menu items"
                   aria-label="shelter application" />
                 <div class="card-body">
                   <p class="text-dark text-center h3 projectItems">
-                    menu links
+                    Lettering
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted">HTML + Scss + JS</small>
