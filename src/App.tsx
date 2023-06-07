@@ -20,6 +20,12 @@ export default class App extends React.Component {
       <div className="App">
         <Header />
           <div className="rightGridBlock">
+
+
+
+           
+{/* сделать отрисовку BackBtn в зависимости от пути, не рисовать на главной странице */}
+          <BackBtn path={window.location.pathname}/> 
             <Routes >
               <Route path='/' element={<AboutMe />} />
               <Route path='/projects' element={<ProjectsSection />} />
@@ -29,7 +35,6 @@ export default class App extends React.Component {
               <Route path='/projects/advice' element={<Advice />} />
               <Route path='/projects/noteEditor' element={<NoteEditor />} />
             </Routes >
-            <BackBtn path={window.location.pathname}/>
           </div>
       </div>
     );

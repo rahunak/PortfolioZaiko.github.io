@@ -15,15 +15,6 @@ class ProjectTile extends React.Component<any> {
   constructor(props: TProject) {
     super(props);
   }
-  // componentDidMount() {
-  //   console.log('componentDidMount',this.props.project.title);
-  // }
-  // componentDidUpdate() {
-  //   console.log('componentDidUpdate',this.props.project.title);
-  // }
-  // componentWillUnmount() {
-  //   console.log('componentWillUnmount',this.props.project.title);
-  // }
 
  render(){
   const reactLinkTo  = this.props.project.reactLinkTo;

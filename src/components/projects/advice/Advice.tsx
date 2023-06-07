@@ -15,7 +15,6 @@ function Advice() {
 
   useEffect(() => {
     getAdviceFromServer().then((res) => {
- console.log('useEffect',res)
       setAdviceId(res.slip.id);
       setAdviceText(res.slip.advice);
     })
@@ -31,14 +30,12 @@ function Advice() {
   
 
     setIsLoading(true);
-    console.log('    onClickHandle',document.querySelector('#buttonGetAdvice')?.classList)
     let res = await getAdviceFromServer()
     
     setAdviceId( res.slip.id );
     setAdviceText( res.slip.advice );
    
     setTimeout(()=>{
-      console.log('res',res);
       setIsLoading(false);
     },300)
   }
