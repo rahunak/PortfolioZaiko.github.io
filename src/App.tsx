@@ -34,7 +34,8 @@ export default class App extends React.Component {
               <Route path='/projects/menuItems' element={<MenuItems />} />
               <Route path='/projects/advice' element={<Advice />} />
               <Route path='/projects/noteEditor' element={<NoteEditor />} />
-            </Routes >
+            </Routes > 
+            <BackBtn path={window.location.pathname}/>
           </div>
       </div>
     );
