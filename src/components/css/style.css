@@ -88,3 +88,274 @@
         transform: translateY(0px);
     }
 }
+
+/* Theme Variables */
+:root {
+    --primary-color: #415169; /* Updated primary color */
+    --background-color: #ffffff;
+    --text-color: #212529; /* Example Bootstrap default text color */
+    --navbar-background-color: #343a40; /* Example Bootstrap dark navbar */
+    --navbar-text-color: #ffffff;
+    --card-background-color: #ffffff;
+    --card-border-color: rgba(0, 0, 0, 0.125);
+    --muted-text-color: #6c757d;
+    --link-color: #415169; /* Updated link color to match new primary */
+    --footer-background-color: #f8f9fa; /* Example Bootstrap light grey */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --primary-color: #4dabf7; /* Lighter blue for dark mode */
+    --background-color: #121212; /* Common dark theme background */
+    --text-color: #e0e0e0; /* Light grey text for dark mode */
+    --navbar-background-color: #1c1c1c; /* Darker navbar for dark mode */
+    --navbar-text-color: #e0e0e0;
+    --card-background-color: #1e1e1e; /* Dark card background */
+    --card-border-color: rgba(255, 255, 255, 0.1);
+    --muted-text-color: #adb5bd; /* Lighter muted text */
+    --link-color: #4dabf7;
+    --footer-background-color: #1c1c1c;
+}
+
+/* Applying theme variables to existing elements */
+.navbar {
+    background-color: var(--navbar-background-color) !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Ensure navbar text elements pick up the theme color */
+.navbar .nav-item,
+.navbar .navbar-brand,
+.navbar .text-white, /* Targets "About me", "Projects" */
+.navbar-dark .navbar-toggler-icon { /* Default Bootstrap selector for the icon */
+    color: var(--navbar-text-color) !important;
+    transition: color 0.3s ease;
+}
+/* For the toggler icon bars, Bootstrap uses an SVG background image. We might need to adjust its color if it's not inheriting. */
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+body.dark-theme .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28224, 224, 224, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.card {
+    background-color: var(--card-background-color);
+    border-color: var(--card-border-color);
+    color: var(--text-color); /* Set default text color for card content */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.card .card-text, .card .h3, .card .small { /* Target specific elements within card if needed */
+    color: var(--text-color);
+}
+
+.card .text-dark {
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+}
+
+.card .text-muted {
+    color: var(--muted-text-color) !important;
+}
+
+/* Sections that use bg-light or similar should adapt */
+.album.bg-light {
+    background-color: var(--background-color) !important;
+    transition: background-color 0.3s ease;
+}
+
+/* General text elements */
+h1, h2, h3, h4, h5, h6, p, .lead {
+    color: var(--text-color);
+}
+
+.text-muted { /* General text-muted class */
+     color: var(--muted-text-color) !important;
+}
+
+/* Ensure links in various sections adapt */
+a {
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: var(--primary-color); /* Example hover */
+}
+
+/* Specific overrides for elements from index.html */
+.collapse.bg-dark {
+    background-color: var(--navbar-background-color) !important;
+    transition: background-color 0.3s ease;
+}
+.collapse.bg-dark h4, .collapse.bg-dark p, .collapse.bg-dark span, .collapse.bg-dark b { /* Text elements inside collapse */
+    color: var(--navbar-text-color) !important;
+    transition: color 0.3s ease;
+}
+.collapse.bg-dark .text-muted { /* More specific for muted text in collapse */
+    color: var(--muted-text-color) !important;
+}
+.collapse.bg-dark ul li a { /* Links inside collapse */
+    color: var(--navbar-text-color) !important;
+}
+.collapse.bg-dark ul li a:hover {
+    color: var(--link-color) !important;
+}
+
+/* Footer-like section ("Let's work together...") */
+section.col.py-0.vh-100.text-center.container {
+    /* This section doesn't have a specific background class, will inherit body background */
+}
+
+.footerItems a { /* This targets the <a> tag directly */
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+}
+.footerItems a:hover {
+    color: var(--link-color) !important;
+}
+.footerItems svg {
+    fill: var(--text-color) !important;
+    transition: fill 0.3s ease;
+}
+body.dark-theme .footerItems svg {
+    fill: var(--text-color) !important; /* Ensure this is the light text color in dark mode */
+}
+
+/* Ensure project links in cards adapt their text color */
+.project-tile a.text-dark {
+    color: var(--text-color) !important;
+}
+body.dark-theme .project-tile a.text-dark {
+    color: var(--text-color) !important; /* Should be light text on dark card */
+}
+
+/* Welcome section specific text */
+#welcome-section .fw-light.display-1.fw-bold { /* "Zaiko Eugeni" */
+    color: var(--text-color) !important;
+}
+#welcome-section .lead.text-muted.display-6 { /* "a web developer" */
+    color: var(--muted-text-color) !important;
+}
+
+/* Projects section title */
+#mainProjects .text-center.py-5.h1.title-h2 { /* "These are some of my projects" */
+    color: var(--text-color) !important;
+}
+
+/* "Let's work together..." section title */
+.mx-auto.h-100.d-flex.flex-column.justify-content-center.align-items-center .fw-light.display-1.fw-bold {
+    color: var(--text-color) !important;
+}
+
+/* SVG Theme Switch Styles */
+.switch { /* This is the <label> element */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; icons are absolutely positioned now */
+    width: 3.7em;
+    height: 2em;
+    background-color: #ddd; /* Track color - light theme */
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0.5rem; /* Spacing in navbar */
+    align-self: center; /* Vertical alignment in navbar */
+    /* padding: 0.25em; icons are positioned absolutely, knob is positioned absolutely */
+    position: relative;
+    overflow: hidden;
+}
+
+.switch__input { /* The actual checkbox */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    visibility: hidden; /* Add visibility: hidden */
+}
+
+body.dark-theme .switch {
+    background-color: #555; /* Track color - dark theme */
+}
+
+/* The icons (sun/moon) */
+.switch .slider { /* Class for the <svg> elements */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.2em;
+    height: 1.2em;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+    z-index: 10;
+    pointer-events: none; /* So they don't interfere with clicks on the label */
+}
+
+.switch .slider:nth-of-type(1) { /* Sun icon */
+    left: 0.4em; /* Position within the switch */
+    transform: translateY(-50%) translateX(0%);
+    opacity: 1; /* Visible in light mode */
+    color: #f39c12; /* Sun color */
+}
+
+.switch .slider:nth-of-type(2) { /* Moon icon */
+    right: 0.4em; /* Position within the switch */
+    transform: translateY(-50%) translateX(0%);
+    opacity: 0; /* Hidden in light mode */
+    color: var(--text-color); /* Moon color, uses theme's text color for dark mode visibility */
+}
+
+body.dark-theme .switch .slider:nth-of-type(1) { /* Sun icon in dark theme */
+    transform: translateY(-50%) translateX(-150%); /* Moves out to the left */
+    opacity: 0;
+}
+
+body.dark-theme .switch .slider:nth-of-type(2) { /* Moon icon in dark theme */
+    opacity: 1;
+}
+
+
+/* The moving circle (knob) */
+.switch::before {
+    content: "";
+    position: absolute;
+    left: 0.25em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5em;
+    height: 1.5em;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    z-index: 1;
+}
+
+body.dark-theme .switch::before {
+    transform: translate(1.7em, -50%);
+    background-color: var(--primary-color);
+}
+
+/* Focus styles for accessibility on the label itself */
+.switch:focus,
+.switch__input:focus + .slider { /* If keyboard focus lands on hidden input, style the label */
+    outline-offset: 2px;
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0 0 0 2px var(--navbar-background-color), 0 0 0 4px var(--primary-color);
+}
+/* Make label focusable if it wasn't already for some reason */
+.switch[tabindex="0"]:focus {
+    outline-offset: 2px;
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0 0 0 2px var(--navbar-background-color), 0 0 0 4px var(--primary-color);
+}
