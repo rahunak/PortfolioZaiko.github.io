@@ -20,19 +20,20 @@
 .projectItems::before {
     content: "<";
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 500ms 0.1s;
 }
 
 .projectItems::after {
     content: "/>";
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 500ms 0.1s;
 }
 
 .footerItems:hover {
     animation-duration: 500ms;
     animation-name: moveLink;
     animation-iteration-count: 1;
+    animation-delay: 0.1s;
 }
 
 .blockForImage {
@@ -44,7 +45,7 @@
     
 }
 .blockForImage .blockForImage__image {
-    transition: all ease-in-out 400ms;
+    transition: all ease-in-out 400ms 0.1s;
 }
 .blockForImage:hover .projectItems::after {
     opacity: 1;
@@ -56,7 +57,6 @@
 
 .blockForImage:hover .blockForImage__image {
     transform: scale(1.1);
-    transition: all ease-in-out 400ms;
     border-radius: 10%;
 }
 
@@ -91,7 +91,7 @@
 
 /* Theme Variables */
 :root {
-    --primary-color: #0d6efd; /* Example Bootstrap primary blue */
+    --primary-color: #4dabf7; /* Example Bootstrap primary blue */
     --background-color: #ffffff;
     --text-color: #212529; /* Example Bootstrap default text color */
     --navbar-background-color: #343a40; /* Example Bootstrap dark navbar */
@@ -126,6 +126,7 @@ body.dark-theme {
 /* Applying theme variables to existing elements */
 .navbar {
     background-color: var(--navbar-background-color) !important; 
+    transition: background-color 0.3s ease;
 }
 
 /* Ensure navbar text elements pick up the theme color */
@@ -134,6 +135,7 @@ body.dark-theme {
 .navbar .text-white, /* Targets "About me", "Projects" */
 .navbar-dark .navbar-toggler-icon { /* Default Bootstrap selector for the icon */
     color: var(--navbar-text-color) !important;
+    transition: color 0.3s ease;
 }
 /* For the toggler icon bars, Bootstrap uses an SVG background image. We might need to adjust its color if it's not inheriting. */
 .navbar-dark .navbar-toggler-icon {
@@ -149,6 +151,7 @@ body.dark-theme .navbar-dark .navbar-toggler-icon {
     background-color: var(--card-background-color);
     border-color: var(--card-border-color);
     color: var(--text-color); /* Set default text color for card content */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 .card .card-text, .card .h3, .card .small { /* Target specific elements within card if needed */
@@ -157,6 +160,7 @@ body.dark-theme .navbar-dark .navbar-toggler-icon {
 
 .card .text-dark { 
     color: var(--text-color) !important;
+    transition: color 0.3s ease;
 }
 
 .card .text-muted {
@@ -166,6 +170,7 @@ body.dark-theme .navbar-dark .navbar-toggler-icon {
 /* Sections that use bg-light or similar should adapt */
 .album.bg-light { 
     background-color: var(--background-color) !important;
+    transition: background-color 0.3s ease;
 }
 
 /* General text elements */
@@ -180,6 +185,7 @@ h1, h2, h3, h4, h5, h6, p, .lead {
 /* Ensure links in various sections adapt */
 a {
     color: var(--link-color);
+    transition: color 0.3s ease 0.05s;
 }
 a:hover {
     color: var(--primary-color); /* Example hover */
@@ -188,9 +194,11 @@ a:hover {
 /* Specific overrides for elements from index.html */
 .collapse.bg-dark { 
     background-color: var(--navbar-background-color) !important;
+    transition: background-color 0.3s ease;
 }
 .collapse.bg-dark h4, .collapse.bg-dark p, .collapse.bg-dark span, .collapse.bg-dark b { /* Text elements inside collapse */
     color: var(--navbar-text-color) !important;
+     transition: color 0.3s ease;
 }
 .collapse.bg-dark .text-muted { /* More specific for muted text in collapse */
     color: var(--muted-text-color) !important;
@@ -209,12 +217,14 @@ section.col.py-0.vh-100.text-center.container {
 
 .footerItems a { /* This targets the <a> tag directly */
     color: var(--text-color) !important; 
+    transition: color 0.3s ease;
 }
 .footerItems a:hover {
     color: var(--link-color) !important;
 }
 .footerItems svg {
     fill: var(--text-color) !important; 
+     transition: fill 0.3s ease 0.05s;
 }
 body.dark-theme .footerItems svg {
     fill: var(--text-color) !important; /* Ensure this is the light text color in dark mode */
@@ -256,7 +266,7 @@ body.dark-theme .project-tile a.text-dark {
     background-color: #ddd; /* Track color - light theme */
     border-radius: 2em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease, outline 0.2s ease;
     margin-left: 0.5rem; /* Spacing in navbar */
     align-self: center; /* Vertical alignment in navbar */
     /* padding: 0.25em; icons are positioned absolutely, knob is positioned absolutely */
