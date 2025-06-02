@@ -210,11 +210,6 @@ a:hover {
     color: var(--link-color) !important; 
 }
 
-/* Footer-like section ("Let's work together...") */
-section.col.py-0.vh-100.text-center.container {
-    /* This section doesn't have a specific background class, will inherit body background */
-}
-
 .footerItems a { /* This targets the <a> tag directly */
     color: var(--text-color) !important; 
     transition: color 0.3s ease;
@@ -222,10 +217,7 @@ section.col.py-0.vh-100.text-center.container {
 .footerItems a:hover {
     color: var(--link-color) !important;
 }
-.footerItems svg {
-    fill: var(--text-color) !important; 
-     transition: fill 0.3s ease 0.05s;
-}
+ 
 body.dark-theme .footerItems svg {
     fill: var(--text-color) !important; /* Ensure this is the light text color in dark mode */
 }
@@ -266,7 +258,7 @@ body.dark-theme .project-tile a.text-dark {
     background-color: #ddd; /* Track color - light theme */
     border-radius: 2em;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.2s ease, outline 0.2s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
     margin-left: 0.5rem; /* Spacing in navbar */
     align-self: center; /* Vertical alignment in navbar */
     /* padding: 0.25em; icons are positioned absolutely, knob is positioned absolutely */
