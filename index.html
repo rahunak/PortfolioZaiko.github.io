@@ -25,6 +25,14 @@
         >
     <script defer src="main.bundle.js"></script></head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" display="none">
+          <symbol id="light" viewBox="0 0 24 24">
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.834 17.834a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.966 17.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM2.25 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75zM6.106 6.106a.75.75 0 001.06-1.06l-1.591-1.59a.75.75 0 00-1.061 1.06l1.591 1.59z"/>
+          </symbol>
+          <symbol id="dark" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M15.1,14.9c-3-0.5-5.5-3-6-6C8.8,7.1,9.1,5.4,9.9,4c0.4-0.8-0.4-1.7-1.2-1.4C4.6,4,1.8,7.9,2,12.5c0.2,5.1,4.4,9.3,9.5,9.5c4.5,0.2,8.5-2.6,9.9-6.6c0.3-0.8-0.6-1.7-1.4-1.2C18.6,14.9,16.9,15.2,15.1,14.9z" />
+          </symbol>
+        </svg>
         <header>
             <div class="collapse bg-dark fixed-top" id="navbarHeader">
                 <div class="row px-5">
@@ -67,7 +75,7 @@
                                 <a target="_blank" href="https://www.linkedin.com/in/rahunak/" class="text-white text-decoration-none">Linkedin</a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://t.me/smallRabbit66" class="text-white text-decoration-none">Telegram</a>
+                                <a target="_blank" href="https://t.me/rahunak" class="text-white text-decoration-none">Telegram</a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://rabota.by/resume/870a400cff08f76f6e0039ed1f364437514b58" class="text-white text-decoration-none">Rabota.by</a>
@@ -87,6 +95,15 @@
                     aria-label="Toggle navigation"
                 >About me</a>
                 <a class="nav-item text-white text-decoration-none" href="#mainProjects">Projects</a>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <svg class="slider" width="24" height="24" fill="currentColor">
+                        <use href="#light"></use>
+                    </svg>
+                    <svg class="slider" width="24" height="24" fill="currentColor">
+                        <use href="#dark"></use>
+                    </svg>
+                </label>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -497,9 +514,8 @@
                     </div>
                     <div class="d-flex flex-row justify-content-center ">
                         <div class="footerItems p-3">
-                            <a href="#">
+                            <a href="https://github.com/rahunak" target="_blank" class="text-dark text-decoration-none ">
                                 <p class="h2">
-                                    <a href="https://github.com/rahunak" target="_blank" class="text-dark text-decoration-none ">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="30"
@@ -511,7 +527,6 @@
                                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                                         </svg>
                                         Git
-                                    </a>
                                 </p>
                             </a>
                         </div>
